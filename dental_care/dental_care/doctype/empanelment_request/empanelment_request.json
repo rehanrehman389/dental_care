@@ -1,0 +1,86 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-24 23:21:52.128574",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "request_date",
+  "dentist",
+  "orthodontist",
+  "column_break_cxtm",
+  "status",
+  "agreement_status"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "request_date",
+   "fieldtype": "Date",
+   "label": "Request Date"
+  },
+  {
+   "fieldname": "dentist",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Dentist",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "orthodontist",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Orthodontist",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_cxtm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Requested",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nRequested\nAccepted\nRejected\nTerminated",
+   "read_only": 1
+  },
+  {
+   "default": "Pending",
+   "fieldname": "agreement_status",
+   "fieldtype": "Select",
+   "label": "Agreement Status",
+   "options": "\nPending\nSigned\nTerminated",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-07-24 23:39:58.188950",
+ "modified_by": "Administrator",
+ "module": "Dental Care",
+ "name": "Empanelment Request",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
