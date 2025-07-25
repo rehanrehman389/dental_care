@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:CASE-{YYYY}-{####}",
  "creation": "2025-07-24 23:28:16.916013",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -46,20 +47,21 @@
    "label": "Case Type"
   },
   {
+   "default": "Pending",
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Draft\nSegmented\nIn Review\nFinalized",
-   "read_only": 1
+   "options": "\nPending\nSegmented\nIn Review\nFinalized"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-24 23:39:57.654870",
+ "modified": "2025-07-25 08:49:06.037059",
  "modified_by": "Administrator",
  "module": "Dental Care",
  "name": "Patient Case",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -71,6 +73,27 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Dentist",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Orthodontist",
    "share": 1,
    "write": 1
   }

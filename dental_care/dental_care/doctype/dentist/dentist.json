@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-25 08:13:05.739225",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "dentist_name",
+  "d_image"
+ ],
+ "fields": [
+  {
+   "fieldname": "dentist_name",
+   "fieldtype": "Data",
+   "label": "Dentist Name"
+  },
+  {
+   "fieldname": "d_image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  }
+ ],
+ "grid_page_length": 50,
+ "image_field": "d_image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-07-25 08:16:40.197924",
+ "modified_by": "Administrator",
+ "module": "Dental Care",
+ "name": "Dentist",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "dentist_name"
+}

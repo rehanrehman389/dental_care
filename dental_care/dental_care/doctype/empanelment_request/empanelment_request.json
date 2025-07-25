@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:EMR-{YYYY}-{####}",
  "creation": "2025-07-24 23:21:52.128574",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -44,8 +45,7 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "\nRequested\nAccepted\nRejected\nTerminated",
-   "read_only": 1
+   "options": "\nRequested\nAccepted\nRejected\nTerminated"
   },
   {
    "default": "Pending",
@@ -59,10 +59,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-24 23:39:58.188950",
+ "modified": "2025-07-25 08:25:53.450178",
  "modified_by": "Administrator",
  "module": "Dental Care",
  "name": "Empanelment Request",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -74,6 +75,27 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Dentist",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Orthodontist",
    "share": 1,
    "write": 1
   }
