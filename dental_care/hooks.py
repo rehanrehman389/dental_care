@@ -26,7 +26,7 @@ app_license = "mit"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/dental_care/css/dental_care.css"
-# app_include_js = "/assets/dental_care/js/dental_care.js"
+app_include_js = "/assets/dental_care/js/image_view_override.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/dental_care/css/dental_care.css"
